@@ -2,11 +2,9 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
 <meta name="generator" content="Hexo 5.4.0">
-
-
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
@@ -15,12 +13,14 @@
 <link rel="stylesheet" href="/css/main.css">
 
 
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.8.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
-<meta name="description" content="今天记录一下第一次参加小美赛的思路以及参加数学建模比赛的一些心路历程 思路在浏览了各个题目之后，我们小组选择的是以D题作为我们的赛题。题目大致的问题是说为什么 100 年一遇的天气事件会如此经常发生？在这里分享一下我们小组的思路。 1.问题：请建立一个数学模型，以评估数据中的天气事件是30年一遇、50年一遇、100年一遇。 对于该问题其实一开始并没有十分的理解，因为该问题并没有明确指出数据中的天气">
+  <meta name="description" content="今天记录一下第一次参加小美赛的思路以及参加数学建模比赛的一些心路历程 思路在浏览了各个题目之后，我们小组选择的是以D题作为我们的赛题。题目大致的问题是说为什么 100 年一遇的天气事件会如此经常发生？在这里分享一下我们小组的思路。 1.问题：请建立一个数学模型，以评估数据中的天气事件是30年一遇、50年一遇、100年一遇。 对于该问题其实一开始并没有十分的理解，因为该问题并没有明确指出数据中的天气">
 <meta property="og:type" content="article">
 <meta property="og:title" content="小美赛记录">
 <meta property="og:url" content="http://example.com/2021/12/04/%E5%B0%8F%E7%BE%8E%E8%B5%9B%E8%AE%B0%E5%BD%95/index.html">
@@ -32,42 +32,72 @@
 <meta property="article:author" content="Tai Cheng">
 <meta name="twitter:card" content="summary">
 
-
 <link rel="canonical" href="http://example.com/2021/12/04/%E5%B0%8F%E7%BE%8E%E8%B5%9B%E8%AE%B0%E5%BD%95/">
 
 
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://example.com/2021/12/04/%E5%B0%8F%E7%BE%8E%E8%B5%9B%E8%AE%B0%E5%BD%95/","path":"2021/12/04/小美赛记录/","title":"小美赛记录"}</script>
-
-<script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>小美赛记录 | TaiCheng's Blog</title>
+  <title>小美赛记录 | TaiCheng's Blog</title>
   
 
 
 
 
+
+
   <noscript>
-    <link rel="stylesheet" href="/css/noscript.css">
-  </noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
-  <div class="headband"></div>
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
 
-  <main class="main">
     <header class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-container">
   <div class="site-nav-toggle">
-    <div class="toggle" aria-label="切换导航栏" role="button">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
     </div>
   </div>
 
   <div class="site-meta">
 
     <a href="/" class="brand" rel="start">
-      <i class="logo-line"></i>
-      <p class="site-title">TaiCheng's Blog</p>
-      <i class="logo-line"></i>
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">TaiCheng's Blog</h1>
+      <span class="logo-line-after"><i></i></span>
     </a>
   </div>
 
@@ -80,86 +110,46 @@
 
 
 
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
+
 
 
 
 </div>
-        
-  
-  <div class="toggle sidebar-toggle" role="button">
-    <span class="toggle-line"></span>
-    <span class="toggle-line"></span>
-    <span class="toggle-line"></span>
-  </div>
-
-  <aside class="sidebar">
-
-    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
-      <ul class="sidebar-nav">
-        <li class="sidebar-nav-toc">
-          文章目录
-        </li>
-        <li class="sidebar-nav-overview">
-          站点概览
-        </li>
-      </ul>
-
-      <div class="sidebar-panel-container">
-        <!--noindex-->
-        <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%80%9D%E8%B7%AF"><span class="nav-number">1.</span> <span class="nav-text">思路</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#2-%E9%97%AE%E9%A2%98%EF%BC%9A%E7%A0%94%E7%A9%B6%E6%9F%90%E4%BA%9B%E5%A4%A9%E6%B0%94%E4%BA%8B%E4%BB%B6%E7%9A%84%E5%8F%91%E7%94%9F%E6%98%AF%E5%90%A6%E5%85%B7%E6%9C%89%E4%B8%80%E5%AE%9A%E7%9A%84%E6%97%B6%E7%A9%BA%E8%A7%84%E5%BE%8B%E6%80%A7%EF%BC%8C%E5%B9%B6%E5%81%9A%E5%87%BA%E4%B8%80%E5%AE%9A%E7%9A%84%E9%A2%84%E6%B5%8B-%E3%80%82"><span class="nav-number">1.0.0.1.</span> <span class="nav-text">2.问题：研究某些天气事件的发生是否具有一定的时空规律性，并做出一定的预测 。</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-%E9%97%AE%E9%A2%98%EF%BC%9A%E8%BF%91%E5%B9%B4%E6%9D%A5%E6%9E%81%E7%AB%AF%E5%A4%A9%E6%B0%94%E4%BA%8B%E4%BB%B6%E7%9A%84%E5%8F%91%E7%94%9F%E6%98%AF%E5%90%A6%E5%8F%98%E5%BE%97%E6%9B%B4%E5%8A%A0%E9%A2%91%E7%B9%81%EF%BC%9F%E8%AF%B7%E7%BB%99%E5%87%BA%E7%A7%91%E5%AD%A6%E7%9A%84%E8%A7%A3%E9%87%8A%E3%80%82"><span class="nav-number">1.0.0.2.</span> <span class="nav-text">3.问题：近年来极端天气事件的发生是否变得更加频繁？请给出科学的解释。</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#4-%E9%97%AE%E9%A2%98%EF%BC%9A%E8%AF%B7%E7%BB%99%E5%9B%BD%E5%AE%B6%E4%BF%9D%E9%99%A9%E5%85%AC%E5%8F%B8%E5%86%99%E4%B8%80%E4%BB%BD1-2%E9%A1%B5%E7%9A%84%E6%9E%81%E7%AB%AF%E5%A4%A9%E6%B0%94%E9%A3%8E%E9%99%A9%E8%AF%84%E4%BC%B0%E6%8A%A5%E5%91%8A%EF%BC%8C%E5%B9%B6%E4%BC%B0%E8%AE%A1%E5%8F%AF%E8%83%BD%E9%80%A0%E6%88%90%E7%9A%84%E6%8D%9F%E5%A4%B1%E3%80%82"><span class="nav-number">1.0.0.3.</span> <span class="nav-text">4.问题：请给国家保险公司写一份1-2页的极端天气风险评估报告，并估计可能造成的损失。</span></a></li></ol></li></ol></li></ol></li></ol></div>
-        </div>
-        <!--/noindex-->
-
-        <div class="site-overview-wrap sidebar-panel">
-          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <p class="site-author-name" itemprop="name">Tai Cheng</p>
-  <div class="site-description" itemprop="description"></div>
-</div>
-<div class="site-state-wrap site-overview-item animated">
-  <nav class="site-state">
-      <div class="site-state-item site-state-posts">
-        <a href="/archives/">
-          <span class="site-state-item-count">2</span>
-          <span class="site-state-item-name">日志</span>
-        </a>
-      </div>
-  </nav>
-</div>
-
-
-
-        </div>
-      </div>
-    </div>
-  </aside>
-  <div class="sidebar-dimmer"></div>
-
-
     </header>
 
     
-  <div class="back-to-top" role="button" aria-label="返回顶部">
+  <div class="back-to-top">
     <i class="fa fa-arrow-up"></i>
     <span>0%</span>
   </div>
 
-<noscript>
-  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
-</noscript>
 
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
 
-    <div class="main-inner post posts-expand">
+          <div class="content post posts-expand">
+            
 
-
-  
-
-
-<div class="post-block">
+    
   
   
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://example.com/2021/12/04/%E5%B0%8F%E7%BE%8E%E8%B5%9B%E8%AE%B0%E5%BD%95/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -176,26 +166,24 @@
           小美赛记录
         </h1>
 
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
 
-      <time title="创建时间：2021-12-04 16:27:15" itemprop="dateCreated datePublished" datetime="2021-12-04T16:27:15+08:00">2021-12-04</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2021-12-13 16:07:00" itemprop="dateModified" datetime="2021-12-13T16:07:00+08:00">2021-12-13</time>
-    </span>
+              <time title="创建时间：2021-12-04 16:27:15" itemprop="dateCreated datePublished" datetime="2021-12-04T16:27:15+08:00">2021-12-04</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-12-13 16:07:00" itemprop="dateModified" datetime="2021-12-13T16:07:00+08:00">2021-12-13</time>
+              </span>
 
-  
-</div>
+          
 
         </div>
       </header>
@@ -204,6 +192,8 @@
     
     
     <div class="post-body" itemprop="articleBody">
+
+      
         <p>今天记录一下第一次参加小美赛的思路以及参加数学建模比赛的一些心路历程</p>
 <h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><p>在浏览了各个题目之后，我们小组选择的是以D题作为我们的赛题。题目大致的问题是说为什么 100 年一遇的<a target="_blank" rel="noopener" href="https://www.zhihu.com/search?q=%E5%A4%A9%E6%B0%94%E4%BA%8B%E4%BB%B6&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22article%22,%22sourceId%22:440726017%7D">天气事件</a>会如此经常发生？在这里分享一下我们小组的思路。</p>
 <p><strong>1.问题：请建立一个数学模型，以评估数据中的天气事件是30年一遇、50年一遇、100年一遇。</strong></p>
@@ -219,36 +209,117 @@
     
     
 
-    <footer class="post-footer">
+      <footer class="post-footer">
 
         
 
-          <div class="post-nav">
-            <div class="post-nav-item">
-                <a href="/2021/12/02/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" rel="prev" title="我的第一篇博客">
-                  <i class="fa fa-chevron-left"></i> 我的第一篇博客
-                </a>
-            </div>
-            <div class="post-nav-item">
-            </div>
-          </div>
-    </footer>
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2021/12/02/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" rel="prev" title="我的第一篇博客">
+      <i class="fa fa-chevron-left"></i> 我的第一篇博客
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
   </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%80%9D%E8%B7%AF"><span class="nav-number">1.</span> <span class="nav-text">思路</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#2-%E9%97%AE%E9%A2%98%EF%BC%9A%E7%A0%94%E7%A9%B6%E6%9F%90%E4%BA%9B%E5%A4%A9%E6%B0%94%E4%BA%8B%E4%BB%B6%E7%9A%84%E5%8F%91%E7%94%9F%E6%98%AF%E5%90%A6%E5%85%B7%E6%9C%89%E4%B8%80%E5%AE%9A%E7%9A%84%E6%97%B6%E7%A9%BA%E8%A7%84%E5%BE%8B%E6%80%A7%EF%BC%8C%E5%B9%B6%E5%81%9A%E5%87%BA%E4%B8%80%E5%AE%9A%E7%9A%84%E9%A2%84%E6%B5%8B-%E3%80%82"><span class="nav-number">1.0.0.1.</span> <span class="nav-text">2.问题：研究某些天气事件的发生是否具有一定的时空规律性，并做出一定的预测 。</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-%E9%97%AE%E9%A2%98%EF%BC%9A%E8%BF%91%E5%B9%B4%E6%9D%A5%E6%9E%81%E7%AB%AF%E5%A4%A9%E6%B0%94%E4%BA%8B%E4%BB%B6%E7%9A%84%E5%8F%91%E7%94%9F%E6%98%AF%E5%90%A6%E5%8F%98%E5%BE%97%E6%9B%B4%E5%8A%A0%E9%A2%91%E7%B9%81%EF%BC%9F%E8%AF%B7%E7%BB%99%E5%87%BA%E7%A7%91%E5%AD%A6%E7%9A%84%E8%A7%A3%E9%87%8A%E3%80%82"><span class="nav-number">1.0.0.2.</span> <span class="nav-text">3.问题：近年来极端天气事件的发生是否变得更加频繁？请给出科学的解释。</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#4-%E9%97%AE%E9%A2%98%EF%BC%9A%E8%AF%B7%E7%BB%99%E5%9B%BD%E5%AE%B6%E4%BF%9D%E9%99%A9%E5%85%AC%E5%8F%B8%E5%86%99%E4%B8%80%E4%BB%BD1-2%E9%A1%B5%E7%9A%84%E6%9E%81%E7%AB%AF%E5%A4%A9%E6%B0%94%E9%A3%8E%E9%99%A9%E8%AF%84%E4%BC%B0%E6%8A%A5%E5%91%8A%EF%BC%8C%E5%B9%B6%E4%BC%B0%E8%AE%A1%E5%8F%AF%E8%83%BD%E9%80%A0%E6%88%90%E7%9A%84%E6%8D%9F%E5%A4%B1%E3%80%82"><span class="nav-number">1.0.0.3.</span> <span class="nav-text">4.问题：请给国家保险公司写一份1-2页的极端天气风险评估报告，并估计可能造成的损失。</span></a></li></ol></li></ol></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Tai Cheng</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+  </nav>
 </div>
 
 
 
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
 
 
+      </div>
+    </main>
 
-</div>
-  </main>
+    <footer class="footer">
+      <div class="footer-inner">
+        
 
-  <footer class="footer">
-    <div class="footer-inner">
-
+        
 
 <div class="copyright">
+  
   &copy; 
   <span itemprop="copyrightYear">2021</span>
   <span class="with-love">
@@ -256,15 +327,39 @@
   </span>
   <span class="author" itemprop="copyrightHolder">Tai Cheng</span>
 </div>
-  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/pisces/" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
   </div>
 
-    </div>
-  </footer>
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
 
   
-  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
-<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
 
   
 
@@ -272,11 +367,19 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
   
 
-
-
-
+  
 
 </body>
 </html>
