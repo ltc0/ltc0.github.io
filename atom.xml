@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Taizilaoren 知识库</title>
+  <icon>https://www.gravatar.com/avatar/64f020096d7b1728c3f872e0adb29a17</icon>
+  <subtitle>sometimes code, sometimes design</subtitle>
+  <link href="https://github.com/ltc0/ltc0.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://github.com/ltc0/ltc0.github.io/"/>
+  <updated>2024-09-28T04:21:13.386Z</updated>
+  <id>https://github.com/ltc0/ltc0.github.io/</id>
+  
+  <author>
+    <name>Taizi laoren</name>
+    <email>taizilaoren@gmail.com</email>
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>1.商业模式-逻辑概述</title>
+    <link href="https://github.com/ltc0/ltc0.github.io/2024/09/28/1.%E5%95%86%E4%B8%9A%E6%A8%A1%E5%BC%8F-%E9%80%BB%E8%BE%91%E6%A6%82%E8%BF%B0/"/>
+    <id>https://github.com/ltc0/ltc0.github.io/2024/09/28/1.%E5%95%86%E4%B8%9A%E6%A8%A1%E5%BC%8F-%E9%80%BB%E8%BE%91%E6%A6%82%E8%BF%B0/</id>
+    <published>2024-09-28T04:11:00.000Z</published>
+    <updated>2024-09-28T04:21:13.386Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="商业画布"><a href="#商业画布" class="headerlink" title="商业画布"></a>商业画布</h2><ul><li>客户细分：清晰的客户群<ul><li>优酷/爱奇艺：追剧爱好者</li><li>携程：旅游爱好者</li></ul></li><li>价值主张：客户购买或者使用的理由，重中之重</li></ul><blockquote><p>事实上很多时候，测试集都是被我们忽略的</p></blockquote><h2 id="何时重构"><a href="#何时重构" class="headerlink" title="何时重构"></a>何时重构</h2><p>事不过三法则（Rule of Three）：第一次做某件事情的时候只管去做，第二次做某件事情的时候会产生反感，但无论如何还是可以去做，第三次再做类似的事情，你就应该重构。</p><blockquote><p>在《代码精进之路》这本书中，也提到了这个原则。</p></blockquote><p>另外的一个时机是，每次要修改时，首先令修改很容易（警告：这件事有时候会很难），然后再进行这次的修改。</p><blockquote><p>比如，笔者最近在做一个长链接客户端 SDK，最初这个 SDK 功能很简单，我直接加功能即可，后面有一次当我要修改的时候，我发现这个 SDK 的修改已经变得异常复杂了，这个时候我知道我应该重构了。</p></blockquote><h2 id="重构法则"><a href="#重构法则" class="headerlink" title="重构法则"></a>重构法则</h2><p>这里对一些我们实际场景中遇到，但是通常会被我们忽视的一些法则进行列举。</p><h3 id="霰弹式修改"><a href="#霰弹式修改" class="headerlink" title="霰弹式修改"></a>霰弹式修改</h3><p>如果我们代码中的模块特别多，如果我们每次遇到一个变化都需要在不同的小模块中做许多小修改，我们所面临的坏味道就是霰弹式修改。<br>这个时候我们需要思考重构，最好我们不同的模块都是正交的。</p><h3 id="慎重注释"><a href="#慎重注释" class="headerlink" title="慎重注释"></a>慎重注释</h3><p>有的时候，我们写注释是因为这段对应的代码逻辑很糟糕。<br>因此当你感觉需要撰写注释的时候，请先尝试重构，试着将所有的注释变成多余。</p><h3 id="提炼变量"><a href="#提炼变量" class="headerlink" title="提炼变量"></a>提炼变量</h3><p>对于复杂语句，提炼变量可以增加可读性。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;商业画布&quot;&gt;&lt;a href=&quot;#商业画布&quot; class=&quot;headerlink&quot; title=&quot;商业画布&quot;&gt;&lt;/a&gt;商业画布&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;客户细分：清晰的客户群&lt;ul&gt;
+&lt;li&gt;优酷/爱奇艺：追剧爱好者&lt;/li&gt;
+&lt;li&gt;携程：旅游爱好者&lt;/li&gt;
+</summary>
+      
+    
+    
+    
+    
+    <category term="商业模式" scheme="https://github.com/ltc0/ltc0.github.io/tags/%E5%95%86%E4%B8%9A%E6%A8%A1%E5%BC%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CentOS安装node8.x版本</title>
+    <link href="https://github.com/ltc0/ltc0.github.io/2017/12/15/CentOS%E5%AE%89%E8%A3%85node8-x%E7%89%88%E6%9C%AC/"/>
+    <id>https://github.com/ltc0/ltc0.github.io/2017/12/15/CentOS%E5%AE%89%E8%A3%85node8-x%E7%89%88%E6%9C%AC/</id>
+    <published>2017-12-15T04:52:34.000Z</published>
+    <updated>2024-09-28T02:10:20.795Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="CentOS-安装-node-8-x-版本"><a href="#CentOS-安装-node-8-x-版本" class="headerlink" title="CentOS 安装 node 8.x 版本"></a>CentOS 安装 node 8.x 版本</h3><p>由于一些原因需要给CentOS服务器安装8.0以上版本的node, 本来直接通过yum管理安装管理，但是没找到好办法，在此记录一下自己最后使用的简单过程：</p><p>安装之前删除原来的node和npm (我原来是用yum安装的，如果是第一次安装可以省略这一步):</p><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum <span class="builtin-name">remove</span> nodejs npm -y</span><br></pre></td></tr></table></figure><p>首先我们随便进入服务器的一个目录，然后从淘宝的源拉取内容:</p><figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">wget</span> https://npm.taobao.org/mirrors/node/v<span class="number">8</span>.<span class="number">0</span>.<span class="number">0</span>/node-v<span class="number">8</span>.<span class="number">0</span>.<span class="number">0</span>-linux-x<span class="number">64</span>.tar.xz </span><br></pre></td></tr></table></figure><p>解压缩:</p><figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">sudo</span> tar -xvf node-v<span class="number">8</span>.<span class="number">0</span>.<span class="number">0</span>-linux-x<span class="number">64</span>.tar.xz </span><br></pre></td></tr></table></figure><p>进入解压目录下的 bin 目录，执行 ls 命令</p><figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">cd</span> node-v<span class="number">8</span>.<span class="number">0</span>.<span class="number">0</span>-linux-x<span class="number">64</span>/bin &amp;&amp; ls </span><br></pre></td></tr></table></figure><p>我们发现有node 和 npm</p><p>这个时候我们测试:</p><figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./<span class="keyword">node</span> <span class="title">-v</span></span><br></pre></td></tr></table></figure><p>这个时候我们发现实际上已经安装好了，接下来就是要建立链接文件。</p><p>这里还是，如果我们之前已经安装过了，那么我们要先删除之前建立的链接文件：</p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo rm -rf <span class="regexp">/usr/</span>bin/node</span><br><span class="line">sudo rm -rf <span class="regexp">/usr/</span>bin/npm</span><br></pre></td></tr></table></figure><p>然后建立链接文件:</p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo ln -s <span class="regexp">/usr/</span>share<span class="regexp">/node-v8.0.0-linux-x64/</span>bin<span class="regexp">/node /u</span>sr<span class="regexp">/bin/</span>node</span><br><span class="line">sudo ln -s <span class="regexp">/usr/</span>share<span class="regexp">/node-v8.0.0-linux-x64/</span>bin<span class="regexp">/npm /u</span>sr<span class="regexp">/bin/</span>npm</span><br></pre></td></tr></table></figure><p>注意这里的第一个路径不要直接复制粘贴，要写当前文件的真正的路径，这个可以通过pwd获取。</p><p>然后我们可以通过<code>node -v</code>等测试已经安装成功。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;CentOS-安装-node-8-x-版本&quot;&gt;&lt;a href=&quot;#CentOS-安装-node-8-x-版本&quot; class=&quot;headerlink&quot; title=&quot;CentOS 安装 node 8.x 版本&quot;&gt;&lt;/a&gt;CentOS 安装 node 8.x 版本&lt;/</summary>
+      
+    
+    
+    
+    
+    <category term="centOS" scheme="https://github.com/ltc0/ltc0.github.io/tags/centOS/"/>
+    
+    <category term="Node.js" scheme="https://github.com/ltc0/ltc0.github.io/tags/Node-js/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>腾讯云北美服务器搭建ShadowSocks代理</title>
+    <link href="https://github.com/ltc0/ltc0.github.io/2016/08/08/%E8%85%BE%E8%AE%AF%E4%BA%91%E5%8C%97%E7%BE%8E%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BAShadowSocks%E4%BB%A3%E7%90%86/"/>
+    <id>https://github.com/ltc0/ltc0.github.io/2016/08/08/%E8%85%BE%E8%AE%AF%E4%BA%91%E5%8C%97%E7%BE%8E%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BAShadowSocks%E4%BB%A3%E7%90%86/</id>
+    <published>2016-08-08T11:15:01.000Z</published>
+    <updated>2024-09-28T02:10:20.852Z</updated>
+    
+    <content type="html"><![CDATA[<p>注：本教程适合centos系列和red hat系列</p><p>登陆SSH<br>新的VPS可以先升级</p><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">yum -y update</span></span><br></pre></td></tr></table></figure><p>有些VPS 没有wget<br>这种要先装</p><figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum -y <span class="keyword">install</span> wget</span><br></pre></td></tr></table></figure><p>输入以下命令：（可以复制）</p><figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">wget --<span class="keyword">no</span>-check-certificate http<span class="variable">s:</span>//raw.githubusercontent.<span class="keyword">com</span>/teddysun/shadowsocks_install/master/shadowsocks.<span class="keyword">sh</span></span><br><span class="line">chmod +<span class="keyword">x</span> shadowsocks.<span class="keyword">sh</span></span><br><span class="line">./shadowsocks.<span class="keyword">sh</span> <span class="number">2</span>&gt;&amp;<span class="number">1</span> | tee shadowsocks.<span class="built_in">log</span></span><br></pre></td></tr></table></figure><p>第一行是下载命令，下载东西，第二行是修改权限，第三行是安装命令</p><p>下面是按照配置图</p><figure class="highlight llvm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">配置：</span><br><span class="line">密码：（默认是teddysun.com）</span><br><span class="line">端口：默认是<span class="number">8989</span></span><br><span class="line">然后按任意键安装，退出按 Ctrl+<span class="keyword">c</span></span><br></pre></td></tr></table></figure><p>安装完成会有一个配置</p><figure class="highlight oxygene"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Congratulations, shadowsocks install completed!Your Server IP:  ***** VPS的IP地址Your Server Port:  *****  你刚才设置的端口Your Password:  ****  你刚才设置的密码Your Local IP:  <span class="number">127.0</span>.<span class="number">0.1</span> Your Local Port:  <span class="number">1080</span> Your Encryption <span class="function"><span class="keyword">Method</span>:</span>  aes-<span class="number">256</span>-cfb Welcome <span class="keyword">to</span> visit:https:<span class="comment">//teddysun.com/342.htmlEnjoy it!</span></span><br></pre></td></tr></table></figure><p>然后即可以使用</p><p>卸载方法：</p><p>使用 root 用户登录，运行以下命令：</p><figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">./shadowsocksR.sh</span> uninstall</span><br></pre></td></tr></table></figure><p>安装完成后即已后台启动 ShadowsocksR ，运行：</p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="regexp">/etc/i</span>nit.d/shadowsocks status</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;注：本教程适合centos系列和red hat系列&lt;/p&gt;
+&lt;p&gt;登陆SSH&lt;br&gt;新的VPS可以先升级&lt;/p&gt;
+&lt;figure class=&quot;highlight ebnf&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;l</summary>
+      
+    
+    
+    
+    
+    <category term="ShadowSocks" scheme="https://github.com/ltc0/ltc0.github.io/tags/ShadowSocks/"/>
+    
+  </entry>
+  
+</feed>
