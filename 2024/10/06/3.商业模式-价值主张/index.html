@@ -13,7 +13,7 @@
 
     <title>
         
-        腾讯云北美服务器搭建ShadowSocks代理 - 知识体系构建
+        3.商业模式-价值主张 - 知识体系构建
         
     </title>
 
@@ -102,7 +102,7 @@
     </div>
     
         <div id="toc" class="toc-article">
-    
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%95%86%E4%B8%9A%E7%94%BB%E5%B8%83"><span class="toc-text">商业画布</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%B7%E5%80%BC%E4%B8%BB%E5%BC%A0"><span class="toc-text">价值主张</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%A7%E4%BC%97%E5%B8%82%E5%9C%BA"><span class="toc-text">大众市场</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%A9%E5%9F%BA%E5%B8%82%E5%9C%BA"><span class="toc-text">利基市场 **</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%88%87%E5%88%86%E7%9B%AE%E6%A0%87%E5%B8%82%E5%9C%BA"><span class="toc-text">切分目标市场</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%A2%E6%88%B7%E8%B4%AD%E4%B9%B0%E5%AF%86%E5%BA%A6"><span class="toc-text">客户购买密度</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%9A%E5%85%83%E5%8C%96%E5%B8%82%E5%9C%BA"><span class="toc-text">多元化市场</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%8C%E8%BE%B9-%E5%A4%9A%E8%BE%B9%E5%B8%82%E5%9C%BA"><span class="toc-text">双边&#x2F;多边市场 **</span></a></li></ol></li></ol>
 </div>
     
 </div>
@@ -134,15 +134,15 @@
 
 <div class="post-container">
     <div class="post-title">
-        腾讯云北美服务器搭建ShadowSocks代理
+        3.商业模式-价值主张
     </div>
 
     <div class="post-meta">
-        <span class="attr">发布于：<span>2016-08-08 19:15:01</span></span>
+        <span class="attr">发布于：<span>2024-10-06 00:49:00</span></span>
         
         <span class="attr">标签：/
         
-        <a class="tag" href="/tags/#ShadowSocks" title="ShadowSocks">ShadowSocks</a>
+        <a class="tag" href="/tags/#商业模式" title="商业模式">商业模式</a>
         <span>/</span>
         
         
@@ -152,30 +152,45 @@
 </span>
     </div>
     <div class="post-content no-indent">
-        <p>注：本教程适合centos系列和red hat系列</p>
-<p>登陆SSH<br>新的VPS可以先升级</p>
-<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">yum -y update</span></span><br></pre></td></tr></table></figure>
-
-<p>有些VPS 没有wget<br>这种要先装</p>
-<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum -y <span class="keyword">install</span> wget</span><br></pre></td></tr></table></figure>
-
-<p>输入以下命令：（可以复制）</p>
-<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">wget --<span class="keyword">no</span>-check-certificate http<span class="variable">s:</span>//raw.githubusercontent.<span class="keyword">com</span>/teddysun/shadowsocks_install/master/shadowsocks.<span class="keyword">sh</span></span><br><span class="line">chmod +<span class="keyword">x</span> shadowsocks.<span class="keyword">sh</span></span><br><span class="line">./shadowsocks.<span class="keyword">sh</span> <span class="number">2</span>&gt;&amp;<span class="number">1</span> | tee shadowsocks.<span class="built_in">log</span></span><br></pre></td></tr></table></figure>
-
-<p>第一行是下载命令，下载东西，第二行是修改权限，第三行是安装命令</p>
-<p>下面是按照配置图</p>
-<figure class="highlight llvm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">配置：</span><br><span class="line">密码：（默认是teddysun.com）</span><br><span class="line">端口：默认是<span class="number">8989</span></span><br><span class="line">然后按任意键安装，退出按 Ctrl+<span class="keyword">c</span></span><br></pre></td></tr></table></figure>
-
-<p>安装完成会有一个配置</p>
-<figure class="highlight oxygene"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Congratulations, shadowsocks install completed!Your Server IP:  ***** VPS的IP地址Your Server Port:  *****  你刚才设置的端口Your Password:  ****  你刚才设置的密码Your Local IP:  <span class="number">127.0</span>.<span class="number">0.1</span> Your Local Port:  <span class="number">1080</span> Your Encryption <span class="function"><span class="keyword">Method</span>:</span>  aes-<span class="number">256</span>-cfb Welcome <span class="keyword">to</span> visit:https:<span class="comment">//teddysun.com/342.htmlEnjoy it!</span></span><br></pre></td></tr></table></figure>
-
-<p>然后即可以使用</p>
-<p>卸载方法：</p>
-<p>使用 root 用户登录，运行以下命令：</p>
-<figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">./shadowsocksR.sh</span> uninstall</span><br></pre></td></tr></table></figure>
-
-<p>安装完成后即已后台启动 ShadowsocksR ，运行：</p>
-<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="regexp">/etc/i</span>nit.d/shadowsocks status</span><br></pre></td></tr></table></figure>
+        <h2 id="商业画布"><a href="#商业画布" class="headerlink" title="商业画布"></a>商业画布</h2><h2 id="价值主张"><a href="#价值主张" class="headerlink" title="价值主张"></a>价值主张</h2><blockquote>
+<p>重中之重，新颖性、性能、 </p>
+<ul>
+<li>商业模式第一步：选准你的目标客户群，精准分析商业痛点</li>
+</ul>
+</blockquote>
+<h3 id="大众市场"><a href="#大众市场" class="headerlink" title="大众市场"></a>大众市场</h3><blockquote>
+<p>英特尔：台式电脑-存储空间大、使用速度块。</p>
+<p>ARM：手机：薄</p>
+</blockquote>
+<h3 id="利基市场"><a href="#利基市场" class="headerlink" title="利基市场 **"></a>利基市场 **</h3><h4 id="切分目标市场"><a href="#切分目标市场" class="headerlink" title="切分目标市场"></a>切分目标市场</h4><ul>
+<li><p>年龄维度</p>
+<blockquote>
+<p>学龄前：学而思</p>
+<p>成年人：华尔街英语、暮享老年大学</p>
+</blockquote>
+</li>
+<li><p>支付能力</p>
+<blockquote>
+<p>化妆品：迪奥（贵）、雅诗兰黛（实惠）</p>
+</blockquote>
+</li>
+<li><p>家庭形态</p>
+<blockquote>
+<p>学区房：三口之家  老年公寓：老年群体 公寓：青年人创业者</p>
+</blockquote>
+</li>
+</ul>
+<h4 id="客户购买密度"><a href="#客户购买密度" class="headerlink" title="客户购买密度"></a>客户购买密度</h4><blockquote>
+<p>好的市场细分：高的购买密度</p>
+<p>不好的市场细分：分出了八个市场，而每个市场的每百人购买东西占比很低</p>
+</blockquote>
+<h3 id="多元化市场"><a href="#多元化市场" class="headerlink" title="多元化市场"></a>多元化市场</h3><blockquote>
+<p>不同国家管制制度不同、用户的需求不同</p>
+</blockquote>
+<h3 id="双边-多边市场"><a href="#双边-多边市场" class="headerlink" title="双边/多边市场 **"></a>双边/多边市场 **</h3><blockquote>
+<p>单边市场：买卖白菜-，买方关心买好白菜，卖方关注卖好价钱</p>
+<p>双边市场：搭建一个菜市场，（绝大多数的互联网公司 ）</p>
+</blockquote>
 
         
         <br />
